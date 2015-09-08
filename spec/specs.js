@@ -12,6 +12,6 @@ describe('encrypt', function() {
     })
 
     it("returns a four character message to an encrypted string", function() {
-        expect(encrypt('It is.')).to.equal('ii ts')
+        expect(encrypt('It is.')).to.equal('iits');
     })
 });
