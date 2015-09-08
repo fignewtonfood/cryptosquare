@@ -1,7 +1,8 @@
 var parser = function(phrase, round, start, length) {
     for(start; start < round; start++) {
-        if ((start < length) && length > 3) {
-            var output = phrase.charAt(start).concat(parser(phrase, round, start+round, length));
+        if ((start < length) && (length > 3)) {
+            var output = phrase.charAt(start) + parser(phrase, round, (start+round), length);
+
         return output;
         } else {
             return phrase;
